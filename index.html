@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>花瓣</title>
+    <!-- <link rel="icon" href="favicon.ico" > -->
+
+</head>
+<body>
+        <input type="text" id="codeInp">
+        <br>
+        <span id="codeBox">AAAA</span>
+        <button id="changeCode">看不清换一张</button>
+    
+    <script>
+    //  let ary = [1,2,3,21,3,2,1];
+    //  let ary1 = []; //定义空数组
+     
+    //  for(let i = 0 ;i <ary.length;i++){
+    //      let ary2 = ary[i];
+    //     if (!ary1.includes(ary2)) {
+    //          ary1.push(ary2)
+    //      }
+    //  }
+    //  console.log(ary1)
+
+
+
+    // let ary = [1,2,3,21,3,2,1];
+    // let ary2 = [];//定义一个空数组
+    // /// 循环ary数组，将里面的值进行比较判断是否ary2里面包含，不包含则push
+    // for(let i = 0;i<ary.length;i++){
+    //     let res = ary[i];
+    //     if(!ary2.includes(res)){
+    //         ary2.push(res);
+    //     }
+    // }
+    // console.log(ary2)
+
+    //验证码
+    // let codeInp = document.getElementById('codeInp');
+    // let codeBox = document.getElementById('codeBox');
+    // let changeCode = document.getElementById('changeCode');
+
+    // function change(){
+    //    let area = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    
+    //    let box = '';
+
+    //    for(let i = 0;i<4;i++){
+    //        let bb = Math.round(Math.random()*61);
+
+    //        box += area.charAt(bb);
+    //    }
+    //    codeBox.innerHTML = box;
+    // }
+    
+    // change();
+
+    // changeCode.onclick = function (){
+    //     change();
+    // }
+    // codeInp.onblur = function (){
+    //     let val = codeInp.value;
+    //     let code = codeBox.innerHTML;
+    //     if(val.toUpperCase === code.toLowerCase){
+    //         alert('成功');
+    //     }else{
+    //         alert('失败 ');
+    //         change();
+    //     }
+    //     codeInp.value = '';
+    // }
+
+
+    // let codeInp = document.getElementById('codeInp');
+    // let codeBox = document.getElementById('codeBox');
+    // let changeCode = document.getElementById('changeCode');
+
+    // function change(){
+    //     let area = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    //     let kong = '';
+        
+    //     //循环生成六位数验证码
+    //     for (let i = 0; i < 6;i++){
+    //         let ran = Math.round(Math.random()*61);
+
+    //         kong += area.charAt(ran);
+    //     }
+    //     codeBox.innerHTML = kong
+    // }
+    // change();
+
+    // changeCode.onclick = function (){
+    //     change();
+    // }
+
+    // codeInp.onblur = function (){
+    //     let inp = codeInp.value;
+    //     let box = codeBox.innerHTML;
+    //     if(inp.toUpperCase === box.toLocaleLowerCase){
+    //         alert('对的 ');
+
+    //     }else{
+    //         alert('错的');
+    //         change();
+    //     }
+    //     codeInp.value = ''
+    // }
+
+
+
+    function sum (){
+        let aa = null;
+        for(let i = 0 ;i < arguments.length ;i++){
+            let bb = arguments[i];
+            if(!isNaN(bb)){
+                aa += bb;
+            }
+        }
+        return aa;
+    }
+    //  console.log(sum(1,2,3,'hahha',''));
+     
+     let cc = sum(1,2,3,'hahha','');
+     console.log(cc);
+     </script>
+</body>
+</html>
